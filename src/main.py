@@ -12,7 +12,7 @@ chat_completion = client.chat.completions.create(
         {
             "role": "user",
             "content": "これはテストです。",
-        }
+        },
     ],
     model="",
 )

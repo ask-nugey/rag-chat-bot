@@ -8,15 +8,13 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
-streamlit = "^1.38.0"
+streamlit = "^1.39.0"
+openai = "^1.51.0"
+python-dotenv = "^1.0.1"
 
 [tool.poetry.group.dev.dependencies]
 mypy = "^1.11.2"
-isort = "^5.13.2"
-black = "^24.8.0"
-pyproject-flake8 = "^7.0.0"
 pytest = "^8.3.3"
-autoflake = "^2.3.1"
 
 [build-system]
 requires = ["poetry-core"]
