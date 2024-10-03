@@ -32,35 +32,24 @@ warn_return_any = true        # 戻り値が Any 型ではない関数の戻り�
 warn_unused_ignores = true    # mypy エラーに該当しない箇所に `# type: ignore` コメントが付与されていたら警告
 warn_redundant_casts = true   # 冗長なキャストに警告
 
-[tool.black]
-line-length = 64
-target-version = ["py312"]
-include = '\.pyi?$'
-exclude = '''
-/(
-    \.git
-  | \.mypy_cache
-  | \.venv
-  | _build
-  | build
-  | dist
-)/
-'''
-
-[tool.flake8]
-max-line-length = 64
-# E203: ":"の前の空白を入れないルール
-# W503: 演算子の前に改行しないようにするルール
-extend-ignore = ["E203", "W503"]
-exclude = [".venv", ".git", "__pycache__"]
-max-complexity = 10
-
-[tool.isort]
-profile = "black"
-line_length = 64
-multi_line_output = 3         # from XXX import lib1, lib2...のような記述時の改行方法の設定(https://pycqa.github.io/isort/docs/configuration/multi_line_output_modes.html)
-include_trailing_comma = true # 最後の要素の末尾に","を付けるようにする設定
-
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 filterwarnings = ["ignore::DeprecationWarning"]
+
+[tool.ruff]
+select = [
+  "ALL",
+  # "F",  # pyflakes
+  # "E",  # error (pycodestyle errors)
+  # "W",  # warning (pycodestyle warnings)
+  # "I",  # isort
+  # "DJ", # flake8-django
+  # "B",  # Black
+  # "N",  # pep8-naming  etc...
+]
+ignore = ["D", "PLR0913"]
+fixable = ["ALL"]
+exclude = [".ruff_cache"]
+line-length = 64
+indent-width = 4
+target-version = "py312"

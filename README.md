@@ -27,10 +27,8 @@ poetry install
 ## フォーマット、リント設定
 
 下記のvscode拡張機能をインストール
-- フォーマッター: [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
-- import並び替え: [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
-- リンター: [Flake8](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8)
-- 型チェッカー: [Mypy](https://marketplace.visualstudio.com/items?itemName=matangover.mypy), [Mypy Type Checker](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker)
+- [Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)
+  - [公式サイト](https://docs.astral.sh/ruff/)
 
 ## プロジェクトのセットアップ
 
