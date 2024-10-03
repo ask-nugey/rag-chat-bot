@@ -12,12 +12,23 @@ brew install pyenv
 pyenv install 3.12
 ```
 
+- バージョン切り替え
+```sh
+poetry env list
+# .venv
+
+poetry env remove .venv
+poetry env use 3.10.4
+poetry install
+```
+
 .python-versionファイルでバージョンを指定
 
 ## フォーマット、リント設定
 
 下記のvscode拡張機能をインストール
 - フォーマッター: [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
+- import並び替え: [isort](https://marketplace.visualstudio.com/items?itemName=ms-python.isort)
 - リンター: [Flake8](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8)
 - 型チェッカー: [Mypy](https://marketplace.visualstudio.com/items?itemName=matangover.mypy), [Mypy Type Checker](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker)
 
