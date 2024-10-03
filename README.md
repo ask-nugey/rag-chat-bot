@@ -1,4 +1,9 @@
 
+## RAG ChatBot
+ChatGPTのAssistants APIを使用した簡易的なRAG ChatBotアプリ
+
+フロントはStreamlit
+
 ## pythonのバージョン管理
 
 - 使用ライブラリ`pyenv`
