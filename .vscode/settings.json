@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "ms-python.black-formatter",
+  "black-formatter.args": ["--line-length=79"],
+  "mypy.runUsingActiveInterpreter": true,
+  "mypy-type-checker.args": [
+    "--follow-imports=silent",
+    "--ignore-missing-imports",
+    "--show-column-numbers",
+    "--no-pretty",
+    "--check-untyped-defs"
+  ]
+}

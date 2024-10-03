@@ -19,6 +19,7 @@ pyenv install 3.12
 下記のvscode拡張機能をインストール
 - フォーマッター: [Black Formatter](https://marketplace.visualstudio.com/items?itemName=ms-python.black-formatter)
 - リンター: [Flake8](https://marketplace.visualstudio.com/items?itemName=ms-python.flake8)
+- 型チェッカー: [Mypy](https://marketplace.visualstudio.com/items?itemName=matangover.mypy), [Mypy Type Checker](https://marketplace.visualstudio.com/items?itemName=ms-python.mypy-type-checker)
 
 ## プロジェクトのセットアップ
 
