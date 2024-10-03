@@ -32,18 +32,18 @@ poetry config virtualenvs.in-project true
 #### 初回インストール
 ```sh
 portry install
+
+# もしくは
+make init
 ```
 
 ### 2. portryで実行
 
-実行例1） python
-```sh
-portry run python src/main.py
-```
-
-実行例2） streamlit（今回はこっち↓）
 ```sh
 poetry run streamlit run src/main.py
+
+# もしくは
+make dev
 ```
 
 ### portryの色々なコマンド
