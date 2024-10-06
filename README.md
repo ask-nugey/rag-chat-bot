@@ -49,11 +49,20 @@ make init
 
 ### 2. poetryで実行
 
+- pythonで起動
+```sh
+poetry run src/main.py
+
+# もしくは
+make dev
+```
+
+- streamlitを起動
 ```sh
 poetry run streamlit run src/main.py
 
 # もしくは
-make dev
+make streamlit
 ```
 
 ### poetryの色々なコマンド
