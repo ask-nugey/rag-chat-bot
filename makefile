@@ -6,7 +6,7 @@ init:
 
 # Python実行
 dev:
-	poetry  run src/main.py
+	poetry run python src/main.py
 
 # Streamlit開発サーバーの起動
 streamlit:
