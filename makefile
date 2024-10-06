@@ -2,7 +2,7 @@
 
 # 初回インストール
 init:
-	portry install
+	poetry install
 
 # Streamlit開発サーバーの起動
 dev:

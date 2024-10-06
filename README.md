@@ -41,13 +41,13 @@ poetry config virtualenvs.in-project true
 
 #### 初回インストール
 ```sh
-portry install
+poetry install
 
 # もしくは
 make init
 ```
 
-### 2. portryで実行
+### 2. poetryで実行
 
 ```sh
 poetry run streamlit run src/main.py
@@ -56,7 +56,7 @@ poetry run streamlit run src/main.py
 make dev
 ```
 
-### portryの色々なコマンド
+### poetryの色々なコマンド
 ```sh
 # モジュールのpyproject.tomlに追記とインストール
 poetry add 【モジュール名】
