@@ -8,11 +8,6 @@
       "source.organizeImports": "explicit"
     }
   },
-  "black-formatter.cwd": "${workspaceFolder}",
-  "black-formatter.args": ["--config", "pyproject.toml"],
-  "flake8.path": ["pflake8"],
-  "flake8.args": ["--config", "pyproject.toml"],
-  "isort.args": ["--profile", "black"],
   "mypy.runUsingActiveInterpreter": true,
   "python.analysis.extraPaths": ["/src"],
 
